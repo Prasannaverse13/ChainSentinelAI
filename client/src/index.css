@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    background: linear-gradient(to bottom right, #000510, #001233);
+    min-height: 100vh;
+  }
+}
+
+.cyber-card {
+  @apply relative overflow-hidden rounded-lg border-2 border-primary/20;
+  background: linear-gradient(145deg, rgba(17, 25, 40, 0.9), rgba(17, 25, 40, 0.6));
+  backdrop-filter: blur(16px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.36);
+}
+
+.cyber-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(81, 194, 255, 0.8), transparent);
+  animation: scanline 2s linear infinite;
+}
+
+.cyber-button {
+  @apply relative overflow-hidden transition-all duration-300;
+  background: linear-gradient(45deg, #0c3483 0%, #6b8cce 100%);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cyber-button:hover {
+  @apply transform -translate-y-0.5;
+  box-shadow: 0 6px 20px rgba(107, 140, 206, 0.3);
+}
+
+.cyber-glow {
+  text-shadow: 0 0 10px rgba(81, 194, 255, 0.5),
+               0 0 20px rgba(81, 194, 255, 0.3),
+               0 0 30px rgba(81, 194, 255, 0.1);
+}
+
+@keyframes scanline {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.cyber-input {
+  @apply bg-transparent border-2 border-primary/20 rounded-lg text-blue-100;
+  background: rgba(17, 25, 40, 0.7);
+  backdrop-filter: blur(12px);
+}
+
+.cyber-input::placeholder {
+  @apply text-blue-200/50;
+}
+
+.cyber-divider {
+  @apply relative;
+  background: linear-gradient(90deg, transparent, rgba(81, 194, 255, 0.2), transparent);
+  height: 1px;
+}
+
+/* Custom Scrollbar Styles */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  @apply bg-blue-950/20 rounded-lg;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-blue-500/30 rounded-lg hover:bg-blue-500/50 transition-colors;
+}
+
+/* Smooth Scroll Behavior */
+.custom-scrollbar {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(59, 130, 246, 0.3) rgba(30, 58, 138, 0.2);
+}

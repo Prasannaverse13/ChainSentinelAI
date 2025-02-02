@@ -1,0 +1,28 @@
+services:
+  tee-monitor:
+    image: registry-cache.phala.systems/phalanetwork/monitor:v0.1.6-alpha.4
+    environment:
+      - AUTHOR=chainsentinel
+    volumes:
+      - /var/run/tappd.sock:/var/run/tappd.sock
+    ports:
+      - "8000:8000"
+
+  node-exporter:
+    image: quay.io/prometheus/node-exporter:latest
+    container_name: node_exporter
+    command:
+      - '--path.rootfs=/host'
+    network_mode: host
+    pid: host
+    restart: unless-stopped
+    volumes:
+      - '/:/host:ro,rslave'
+
+x-common: &common-config
+  restart: always
+  logging:
+    driver: "json-file"
+    options:
+      max-size: "100m"
+      max-file: "5"
