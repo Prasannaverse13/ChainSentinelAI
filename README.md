@@ -68,7 +68,7 @@ ChainSentinel is a cutting-edge blockchain security platform that leverages AI f
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/chainsentinel.git
+git clone https://github.com/Prasannaverse13/ChainSentinelAI.git
 cd chainsentinel
 ```
 
