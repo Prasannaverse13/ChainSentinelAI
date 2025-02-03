@@ -68,7 +68,7 @@ ChainSentinel is a cutting-edge blockchain security platform that leverages AI f
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/Prasannaverse13/ChainSentinelAI.git
+git clone https://github.com/yourusername/chainsentinel.git
 cd chainsentinel
 ```
 
@@ -98,6 +98,7 @@ The application will be available at `http://localhost:5000`
 - Real-time security analysis
 - Smart contract vulnerability detection
 - Transaction risk assessment
+- **Get API Key:** [DeepSeek AI by NVIDIA](https://build.nvidia.com/deepseek-ai/deepseek-r1)
 
 ### EternalAI
 - Advanced threat detection
