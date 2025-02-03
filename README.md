@@ -55,11 +55,17 @@ cd chainsentinel
 npm install
 ```
 
+2.5 NVIDIA(Deepseek API_KEY: 
+```bash
+https://build.nvidia.com/deepseek-ai/deepseek-r1
+```
+
 3. Set up environment variables:
 Create a `.env` file with:
 ```env
 NVIDIA_API_KEY=your_deepseek_api_key
-ETERNALAI_API_KEY=your_eternal_ai_key
+ETERNALAI_API_KEY=your_eternal_api_key
+CROSSMINT_API_KEY=your_crossmint_api_key
 ```
 
 4. Start the development server:
@@ -81,12 +87,5 @@ The application will be available at `http://localhost:5000`
 - Security pattern recognition
 - Blockchain security monitoring
 
-## Contact & Support
-
-For support or inquiries:
-- GitHub Issues: [Project Issues](https://github.com/yourusername/chainsentinel/issues)
-- Documentation: [Project Documentation](/docs)
-
-## License
-
-MIT License - see LICENSE file for details
+### CROSSMINT
+- Wallet Integration
