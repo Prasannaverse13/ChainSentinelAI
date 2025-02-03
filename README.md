@@ -42,6 +42,28 @@ ChainSentinel is a cutting-edge blockchain security platform that leverages AI f
 - EternalAI integration
 - Blockchain monitoring system
 
+## Tools Used
+
+### 1. Mode Network (Core)
+- Provides the foundational blockchain infrastructure for ChainSentinel
+- Ensures low transaction fees and fast processing times
+
+### 2. Crossmint & MetaMask
+- Enables wallet authentication and seamless user transactions
+- Supports both traditional and Web3 wallet interactions
+
+### 3. EternalAI & NVIDIA's DeepSeek
+- EternalAI for advanced security analysis and threat detection
+- DeepSeek for real-time AI-powered transaction and contract monitoring
+
+### 4. Phala Privacy TEE
+- Secure execution environment for sensitive security processes
+- Ensures private AI computations for enhanced blockchain security
+
+### 5. Goldsky
+- Provides indexed blockchain data for transaction monitoring and historical analysis
+- Enhances the security analysis process with structured blockchain insights
+
 ## Getting Started
 
 1. Clone the repository:
@@ -53,11 +75,6 @@ cd chainsentinel
 2. Install dependencies:
 ```bash
 npm install
-```
-
-2.5 NVIDIA(Deepseek API_KEY: 
-```bash
-https://build.nvidia.com/deepseek-ai/deepseek-r1
 ```
 
 3. Set up environment variables:
@@ -89,3 +106,4 @@ The application will be available at `http://localhost:5000`
 
 ### CROSSMINT
 - Wallet Integration
+
